@@ -3,7 +3,7 @@
  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Raouf25_Spring-Boot-efficient-search-API&metric=alert_status)](https://sonarcloud.io/dashboard?id=Raouf25_Spring-Boot-efficient-search-API)
  [![BCH compliance](https://bettercodehub.com/edge/badge/Raouf25/Spring-Boot-efficient-search-API?branch=master)](https://bettercodehub.com/)
 
-### Changes done from the original fork
+### Changes done from the original fork (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
 * docker-compose added
 * Dockerfile changed to skip tests
 * mysql-dump, data and config directories added to support MYSQL database initialization
