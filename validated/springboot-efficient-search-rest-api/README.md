@@ -6,6 +6,7 @@
 ### Changes done from the original fork (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
 * docker-compose added
 * Dockerfile changed to skip tests
+* Testing
 * mysql-dump, data and config directories added to support MYSQL database initialization
 * pom.xml changed to include mysql dependency
 * application.properties changed to externalize the DB connection from H2 to MYSQL
