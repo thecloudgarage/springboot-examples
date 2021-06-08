@@ -17,9 +17,35 @@
 ### STEP-1 OKTA SETUP 
 * Register via https://developer.okta.com/login/ and any method (google, github, etc.)
 * Complete initial nuances of goals, etc.
-* Top left hand menu icon > directory > people. FInish the addition of a user and send activation email
+* Top left hand menu icon > directory > people. Finish the addition of a user and send activation email. 
+* Regardless, the user for which the account has been created needs to activate their account via the email received and set a password for themselves
+
+![image](https://user-images.githubusercontent.com/39495790/121224644-6637ee80-c8a6-11eb-8d4e-a1c00a191466.png)
+
 * Alternatively you can do a group based assignment also., but for now we will stick to single user
-* Next again click on menu and Applications > Applications > Add application > create new app > platform drop-down > Native app (defaults to OpenId Connect) > Create
+* Next again click on menu and Applications > Create App Integration
+
+![image](https://user-images.githubusercontent.com/39495790/121224542-4d2f3d80-c8a6-11eb-9f4f-3abaf79e7215.png)
+
+![image](https://user-images.githubusercontent.com/39495790/121225400-1c9bd380-c8a7-11eb-8ca8-e93c38b3e9ec.png)
+
+![image](https://user-images.githubusercontent.com/39495790/121225827-8b792c80-c8a7-11eb-8a21-66a99825cae3.png)
+
+* Select the grant types as shown below and the value of Login redirect URI as shown. Example http://3.142.146.96:8031/login/oauth2/code/okta (ensure your ip/dnsname:port on which springboot app will run is followed by the specified string)
+
+![image](https://user-images.githubusercontent.com/39495790/121227497-42c27300-c8a9-11eb-9762-1034be366594.png)
+
+
+
+
+
+* 
+* Applications > Add application > create new app > platform drop-down > OpenId Connect > Web Application
+
+
+
+
+* Native app (defaults to OpenId Connect) > Create
 ** Application name: give it a name
 ** Configure OpenId connect > Login redirect URLs > Add URL > Example http://3.142.146.96:8031/login/oauth2/code/okta (ensure your ip/dnsname:port on which springboot app will run is followed by the specified string)
 ** Leave logout url as-is & save
