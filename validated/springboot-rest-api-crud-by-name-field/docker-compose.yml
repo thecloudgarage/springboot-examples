@@ -1,0 +1,28 @@
+version: '3'
+services:
+  gpsinventory:
+    image: postgres:9.5
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: dbpass
+      POSTGRES_DB: gpsinventory
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgresql/data:/var/lib/postgresql/data
+      - ./postgresql/postgresql-dump:/docker-entrypoint-initdb.d
+
+  gpsinventory-api:
+    image: gpsinventory-api:latest
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      dbhost: "gpsinventory"
+      dbport: 5432
+      dbname: "gpsinventory"
+      dbuser: "root"
+      dbpass: "dbpass"
+    ports:
+      - "8031:8080"
+    restart: on-failure
