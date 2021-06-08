@@ -161,6 +161,6 @@ Response
 ```
 
 ### Projects observed for reference:
-https://www.javaguides.net/2019/01/springboot-postgresql-jpa-hibernate-crud-restful-api-tutorial.html
-https://bushansirgur.in/spring-data-jpa-finder-methods-by-field-name-with-examples/
-https://github.com/TechPrimers/spring-data-rest-jpa-example/blob/master/src/main/java/com/techprimers/controller/UsersController.java
+* https://www.javaguides.net/2019/01/springboot-postgresql-jpa-hibernate-crud-restful-api-tutorial.html
+* https://bushansirgur.in/spring-data-jpa-finder-methods-by-field-name-with-examples/
+* https://github.com/TechPrimers/spring-data-rest-jpa-example/blob/master/src/main/java/com/techprimers/controller/UsersController.java
