@@ -31,9 +31,22 @@
 
 ![image](https://user-images.githubusercontent.com/39495790/121225827-8b792c80-c8a7-11eb-8a21-66a99825cae3.png)
 
-* Select the grant types as shown below and the value of Login redirect URI as shown. Example http://3.142.146.96:8031/login/oauth2/code/okta (ensure your ip/dnsname:port on which springboot app will run is followed by the specified string)
+* Select the grant types as shown below and the value of Login redirect URI as shown. 
+* Example http://3.142.146.96:8031/login/oauth2/code/okta (ensure your ip/dnsname:port on which springboot app will run is followed by the specified string)
 
 ![image](https://user-images.githubusercontent.com/39495790/121227497-42c27300-c8a9-11eb-9762-1034be366594.png)
+
+* For now, leave everything else to default values and save
+* Once saved you will see the app summary. Copy the client id and secret. We have to edit the app again to set the **Initiate Login URI**
+
+![image](https://user-images.githubusercontent.com/39495790/121228865-e6f8e980-c8aa-11eb-8f81-64efd83dfa82.png)
+
+* Scroll down and insert the **Initiate Login URI** and save
+
+![image](https://user-images.githubusercontent.com/39495790/121229761-004e6580-c8ac-11eb-9407-b874b26ff550.png)
+
+
+
 
 
 
