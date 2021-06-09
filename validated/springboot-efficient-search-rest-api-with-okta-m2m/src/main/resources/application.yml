@@ -1,0 +1,12 @@
+security:
+  oauth2:
+    client:
+      clientId: ${oktaClientId}
+      clientSecret: ${oktaClientSecret}
+    resource:
+      tokenInfoUri: ${oktaIssuerUrl}/v1/introspect
+spring:
+    datasource:
+        password: ${dbpass}
+        url: jdbc:mysql://${dbhost}:${dbport}/${dbname}?zeroDateTimeBehavior=convertToNull
+        username: ${dbuser}
