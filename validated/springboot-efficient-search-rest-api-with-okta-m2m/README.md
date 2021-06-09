@@ -104,8 +104,9 @@ public class SpringBootEfficientSearchApiApplication {
 * Adjust the db and related env variables as per your choice
 
 ### RUN THE APPLICATION
-* docker-compose up -d --build
-
+```
+docker-compose up -d --build
+```
 ### Consuming the Springboot API
 
 * Retrieve a token using the token endpoint, client id, client secret and custom scope name defined above
