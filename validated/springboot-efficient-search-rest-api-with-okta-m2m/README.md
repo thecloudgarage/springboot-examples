@@ -65,35 +65,48 @@ public class SpringBootEfficientSearchApiApplication {
 
 ![image](https://user-images.githubusercontent.com/39495790/121312780-590d1500-c923-11eb-973e-70b718d6720e.png)
 
-![image](https://user-images.githubusercontent.com/39495790/121312828-65916d80-c923-11eb-9b36-21ff0b08008b.png)
+* Once saved you will see the app summary. Copy the client id and secret. 
 
-* Once saved you will see the app summary. Copy the client id and secret. We have to edit the app again to set the **Initiate Login URI**
+![image](https://user-images.githubusercontent.com/39495790/121313014-9a052980-c923-11eb-8b27-8e39eee76429.png)
 
-![image](https://user-images.githubusercontent.com/39495790/121228865-e6f8e980-c8aa-11eb-8f81-64efd83dfa82.png)
+* Navigate through left hand menu > security > API. Herein we will need to do a couple of things as next steps
+* Click on the default authorization server to retrive the Issuer URL, Token URL and set a custom scope
 
-* Scroll down and insert the **Initiate Login URI** and save
+![image](https://user-images.githubusercontent.com/39495790/121314403-f0bf3300-c924-11eb-943c-224b7f9d2182.png)
 
-![image](https://user-images.githubusercontent.com/39495790/121229761-004e6580-c8ac-11eb-9407-b874b26ff550.png)
+* On the following screen
+  * Copy the Issuer URL. This will be used in the docker-compose file as an environment variable
+  * Then click the MetaData URL. It will open a new page, wherein we need to copy the Token URL
+  
+![image](https://user-images.githubusercontent.com/39495790/121315255-cb7ef480-c925-11eb-8279-54aa5547ecb1.png)
+![image](https://user-images.githubusercontent.com/39495790/121315974-78597180-c926-11eb-859f-1f4a5ad6c4ef.png)
 
-* You will be headed back to the App summary page. As of now all users in your organization are permitted to use this app. One can edit the assignments and delete the users. Optionally, if one has setup group based assignments, the authorization can be restricted at group level
+* Once we have the Issuer and Token URLs handy. On the default authorization server page, click on scopes to create a custom scope
 
-![image](https://user-images.githubusercontent.com/39495790/121232805-9768ec80-c8af-11eb-885a-30dab1ebf020.png)
+![image](https://user-images.githubusercontent.com/39495790/121316427-f158c900-c926-11eb-82d3-500e13865f30.png)
 
-* If not yet click on General tab and copy the Client ID and Client Secret ID. Store these for later use
-* Click on left hand menu > Security > API. Here you will see the default authorization server for your account. Copy the Issuer URL and store this for later use
+* Add a scope and ensure that you have the name defined here handy as it will be required for any client API to generate tokens
 
-![image](https://user-images.githubusercontent.com/39495790/121233644-73f27180-c8b0-11eb-880a-eecaeb0dfc78.png)
+![image](https://user-images.githubusercontent.com/39495790/121316583-19482c80-c927-11eb-81da-31bd5bdf7503.png)
 
+* Once done, you will be able to see the created scope
+
+![image](https://user-images.githubusercontent.com/39495790/121316714-3aa91880-c927-11eb-8317-e0ae8785629e.png)
+
+> As a summary, you would have created a M2M app integration and retrieved the **Issuer URL, Token URL, Client ID, Client Secret, Scope name**. These variables are required for next steps
 
 ### STEP-2 MODIFY DOCKER-COMPOSE
 * Edit the docker-compose.yml in the parent directory
+
+> NOTE: Don't do a copy paste error between Issuer URL and Token URL
+
 * Insert the values for **Issuer URL, Client ID and Client Secret** in between the empty quotes against the respective variables set up for springboot app
 * Adjust the db and related env variables as per your choice
 
 ### RUN THE APPLICATION
 * docker-compose up -d --build
 * Visit the url http://ip-address-or-dns-hostname:8031/api/cars
-* Perform OAuth2 authentication with OKTA and validate redirect to the page. The user ID used to authenticate should be in the assignments list of Okta App and the user should have activated their accounts via the email received
+
 
 ### NOTE on Actual usage of the API
 
