@@ -1,5 +1,5 @@
 # Objective
-Spring boot and Postgresql API that creates, reads, updates values by name and not by typical id
+Spring boot and Postgresql API that creates, reads, updates values by **string fields** and not by typical id
 
 ## Prerequisites
 Docker and Docker compose installed
