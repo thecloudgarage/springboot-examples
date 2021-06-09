@@ -12,7 +12,7 @@ Take the previous version of efficient search API and enable it for **OKTA OAuth
 * mysql-dump, data and config directories added to support MYSQL database initialization
 * pom.xml changed to include mysql dependency
 * pom.xml changed
-  * OKTA security dependency for Web based OAuth2 removed
+  * **Removed** OKTA security dependency for Web based OAuth2
   * Spring security dependencies added
 ```
         <dependency>
