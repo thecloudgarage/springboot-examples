@@ -8,8 +8,12 @@ Take the previous version of efficient search API and enable it for **OKTA OAuth
 
 **Example:** One API calling another API which is secured via OKTA. Your client application/API needs to securely store its Client ID and secret and pass those to Okta in exchange for an access token. At a high-level, the flow only has two steps:
 
+![image](https://user-images.githubusercontent.com/39495790/121356158-3cd29d80-c94e-11eb-9ea4-adb639f7a40b.png)
+
 ### Changes done from the original fork (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
 * docker-compose added
+* **Boomi HTTP client process** to emulate Client Credentials Grant workflow
+* **CURL client** to manually emulate the Client Credentials Grant workflow
 * Dockerfile changed to skip tests
 * mysql-dump, data and config directories added to support MYSQL database initialization
 * pom.xml changed to include mysql dependency
