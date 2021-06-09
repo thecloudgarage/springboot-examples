@@ -4,7 +4,7 @@
  [![BCH compliance](https://bettercodehub.com/edge/badge/Raouf25/Spring-Boot-efficient-search-API?branch=master)](https://bettercodehub.com/)
 
 ## Objective
-Take the previous version of efficient search API and enable it for OKTA OAuth2.0 Web App authentication. When you browse the URL, it will redirect the page to OKTA authentication page and upon success you will be redirected to the API output page.
+Take the previous version of efficient search API and enable it for **OKTA OAuth2.0 Web App authentication**. When you browse the URL, it will redirect the page to OKTA authentication page and upon success you will be redirected to the API output page.
 
 ### Changes done from the original fork (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
 * docker-compose added
