@@ -4,21 +4,50 @@
  [![BCH compliance](https://bettercodehub.com/edge/badge/Raouf25/Spring-Boot-efficient-search-API?branch=master)](https://bettercodehub.com/)
 
 ## Objective
-Take the previous version of efficient search API and enable it for **OKTA OAuth2.0 Web App authentication**. When you browse the URL, it will redirect the page to OKTA authentication page and upon success you will be redirected to the API output page.
+Take the previous version of efficient search API and enable it for **OKTA OAuth2.0 Machine2Machine** instead of Web based OAuth2.0. The m2m method implements **Client Credentials flow** and is recommended for server-side (AKA confidential) client applications with no end user, which normally describes machine-to-machine communication. **Example:** One API calling another API which is secured via OKTA. Your client application/API needs to securely store its Client ID and secret and pass those to Okta in exchange for an access token. At a high-level, the flow only has two steps:
 
 ### Changes done from the original fork (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
 * docker-compose added
 * Dockerfile changed to skip tests
 * mysql-dump, data and config directories added to support MYSQL database initialization
 * pom.xml changed to include mysql dependency
-* pom.xml changed to include OKTA dependency
-* application.properties changed to externalize the DB connection from H2 to MYSQL
-* application.properties changed to externalize OKTA configuration	
+* pom.xml changed
+  * OKTA security dependency for Web based OAuth2 removed
+  * Spring security dependencies added
+```
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security.oauth.boot</groupId>
+            <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+```
+* application.yml changed to externalize the DB connection from H2 to MYSQL
+* **application.yml changed to accomodate OKTA m2m methods include token instrospection**	
+* Main application class (SpringBootEfficientSearchApiApplication.java) changed to import spring security classes and enable application as a resource server
+```
+package com.mak.springbootefficientsearchapi;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+import org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler;
+
+@EnableResourceServer
+@SpringBootApplication
+public class SpringBootEfficientSearchApiApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootEfficientSearchApiApplication.class, args);
+    }
+}
+```
 * data.sql changed to a full dump and moved to mysql-dump directory instead of /src/main/resources
 * To run simply execute "docker-compose up -d --build" (change variables as needed in docker-compose.yml)
 
-> **NOTE** pom.xml has one okta dependency included and that's all! Everything else is managed by OKTA configurations.
-> 
 ### STEP-1 OKTA SETUP 
 * Register via https://developer.okta.com/login/ and any method (google, github, etc.)
 * Complete initial nuances of goals, etc.
