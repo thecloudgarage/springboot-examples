@@ -4,16 +4,17 @@
  [![BCH compliance](https://bettercodehub.com/edge/badge/Raouf25/Spring-Boot-efficient-search-API?branch=master)](https://bettercodehub.com/)
 
 ## Objective
-Take the previous version of efficient search API and enable it for **OKTA OAuth2.0 Web App authentication**. When you browse the URL, it will redirect the page to OKTA authentication page and upon success you will be redirected to the API output page.
+Take the previous version of efficient search API and enable it for **OKTA OAuth2.0 Web App authentication**. When you browse the URL, it will redirect the page to OKTA authentication page and upon success you will be redirected to the API output page. Implements OpenId connect Web Application method of OKTA for OAuth2.0
 
 ### Changes done from the original fork (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
 * docker-compose added
 * Dockerfile changed to skip tests
 * mysql-dump, data and config directories added to support MYSQL database initialization
 * pom.xml changed to include mysql dependency
-* pom.xml changed to include OKTA dependency
-* application.properties changed to externalize the DB connection from H2 to MYSQL
-* application.properties changed to externalize OKTA configuration	
+* **pom.xml changed to include OKTA dependency**
+* **application.properties** changed to **application.yml** (used http://www.allencoders.online/converters/props2yaml)
+* application.yml changed to externalize the DB connection from H2 to MYSQL
+* **application.yml changed to externalize OKTA configuration**	
 * data.sql changed to a full dump and moved to mysql-dump directory instead of /src/main/resources
 * To run simply execute "docker-compose up -d --build" (change variables as needed in docker-compose.yml)
 
