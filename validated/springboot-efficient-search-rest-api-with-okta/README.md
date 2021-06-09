@@ -43,7 +43,7 @@ Take the previous version of efficient search API and enable it for **OKTA OAuth
 ![image](https://user-images.githubusercontent.com/39495790/121231479-165d2580-c8ae-11eb-8828-cae31dfb721b.png)
 
 * For now, leave everything else to default values and save
-* **Optionally** you can secure the authentication request such that it will be accepted only from your IP/DNS name by setting the base URI. You can type in http://your-ip-or-hostname:portnumber
+* **Optionally** you can secure the authentication request such that it will be accepted only from your IP/DNS name by setting the base URI. You can type in http://your-ip-or-hostname:portnumber (this is validated., so no problems)
 
 ![image](https://user-images.githubusercontent.com/39495790/121231960-aac78800-c8ae-11eb-8f58-8592c4e6130b.png)
 
@@ -109,35 +109,7 @@ GET /api/cars?country=USA&sort=createDate,desc&limit=100&offset=2
 ```
 This query should result in the list of 100 cars from the USA, sorted descending by the creation date, and the presented records are on the second page, which means they are from a 101–200 record number range.
 
-##### Test application
-
-```
-$  curl localhost:8080/api/cars/1
-```
-
-the response should be:
-```json
-{
-   "id":1,
-   "manufacturer":"Acura",
-   "model":"Integra",
-   "type":"Small",
-   "country":"Japon",
-   "createDate":"1931-02-01"
-}
-```
-
-#####  Stop Docker Container:
-```
-docker stop `docker container ls | grep "spring-boot-efficient-search-api:*" | awk '{ print $1 }'`
-```
-
-## Live Demo
-This project is deployed in https://efficient-search-api.herokuapp.com/api/cars
-
-Let's try: https://efficient-search-api.herokuapp.com/api/cars?country=USA&sort=createDate,desc&limit=100&offset=2
-
-## License
+## License (original credits to below)
 For more details please see this **[medium post](https://medium.com/quick-code/spring-boot-how-to-design-efficient-search-rest-api-c3a678b693a0)** .
 
 Spring Boot Efficient Search Api Copyright © 2020 by Abderraouf Makhlouf <makhlouf.raouf@gmail.com>
