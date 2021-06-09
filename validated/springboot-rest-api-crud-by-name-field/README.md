@@ -5,7 +5,7 @@ Spring boot and Postgresql API that creates, reads, updates values by name and n
 Docker and Docker compose installed
 
 ## Steps to recreate
-* Clone the repo and create an empty directory named data to hold postgresql data
+* Clone the repo and **create an empty directory named data to hold postgresql data**
 * In case db name/user/password needs a change., edit the variables in docker-compose.yml
 
 ```
