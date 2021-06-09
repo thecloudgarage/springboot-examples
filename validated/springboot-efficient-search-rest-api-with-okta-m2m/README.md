@@ -61,19 +61,11 @@ public class SpringBootEfficientSearchApiApplication {
 
 ![image](https://user-images.githubusercontent.com/39495790/121224542-4d2f3d80-c8a6-11eb-9f4f-3abaf79e7215.png)
 
-![image](https://user-images.githubusercontent.com/39495790/121225400-1c9bd380-c8a7-11eb-8ca8-e93c38b3e9ec.png)
+![image](https://user-images.githubusercontent.com/39495790/121312663-3aa71980-c923-11eb-9244-f4fe445c290a.png)
 
-![image](https://user-images.githubusercontent.com/39495790/121225827-8b792c80-c8a7-11eb-8a21-66a99825cae3.png)
+![image](https://user-images.githubusercontent.com/39495790/121312780-590d1500-c923-11eb-973e-70b718d6720e.png)
 
-* Select the grant types as shown below and the value of Login redirect URI as shown. 
-* Example http://3.142.146.96:8031/login/oauth2/code/okta (ensure your ip/dnsname:port on which springboot app will run is followed by the specified string)
-
-![image](https://user-images.githubusercontent.com/39495790/121231479-165d2580-c8ae-11eb-8828-cae31dfb721b.png)
-
-* For now, leave everything else to default values and save
-* **Optionally** you can secure the authentication request such that it will be accepted only from your IP/DNS name by setting the base URI. You can type in http://your-ip-or-hostname:portnumber
-
-![image](https://user-images.githubusercontent.com/39495790/121231960-aac78800-c8ae-11eb-8f58-8592c4e6130b.png)
+![image](https://user-images.githubusercontent.com/39495790/121312828-65916d80-c923-11eb-9b36-21ff0b08008b.png)
 
 * Once saved you will see the app summary. Copy the client id and secret. We have to edit the app again to set the **Initiate Login URI**
 
