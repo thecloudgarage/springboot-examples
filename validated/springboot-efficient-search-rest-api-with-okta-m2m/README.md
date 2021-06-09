@@ -105,7 +105,30 @@ public class SpringBootEfficientSearchApiApplication {
 
 ### RUN THE APPLICATION
 * docker-compose up -d --build
-* Visit the url http://ip-address-or-dns-hostname:8031/api/cars
+
+### Consuming the Springboot API
+
+* Retrieve a token using the token endpoint, client id, client secret and custom scope name defined above
+
+```
+curl -v -X POST \
+-H "Content-type:application/x-www-form-urlencoded" \
+"<your-token-url>" \
+-d "client_id=<your-client-id>&client_secret=<your-client-secret>&grant_type=client_credentials&scope=<your-scope-name>"
+ ```
+ 
+* You should see an ouput similar to:
+
+```
+{
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "access_token": "LONG-STRING-OF-TOKEN",
+    "scope": "springboot-secure-rest-api"
+}
+```
+* Copy the long string (without quotes) of the token
+
 
 
 ### NOTE on Actual usage of the API
