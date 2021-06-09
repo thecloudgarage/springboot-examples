@@ -501,7 +501,7 @@ This query should result in the list of 100 cars from the USA, sorted descending
 ##### Test application
 
 ```
-$  curl localhost:8080/api/cars/1
+curl -H "Authorization: Bearer <paste-your-token-without-quotes>" http://ip-address-or-dns-name:8031/api/cars/1
 ```
 
 the response should be:
@@ -516,10 +516,11 @@ the response should be:
 }
 ```
 
-#####  Stop Docker Container:
-```
-docker stop `docker container ls | grep "spring-boot-efficient-search-api:*" | awk '{ print $1 }'`
-```
+## BOOMI process- Emulate the Client APP/API
+
+Prequisites: Atom deployed and online
+
+
 
 ### Credit to the author of original repo for the basic api functionality
 For more details please see this **[medium post](https://medium.com/quick-code/spring-boot-how-to-design-efficient-search-rest-api-c3a678b693a0)** .
