@@ -71,7 +71,9 @@ Take the previous version of efficient search API and enable it for **OKTA OAuth
 * Adjust the db and related env variables as per your choice
 
 ### RUN THE APPLICATION
-* docker-compose up -d --build
+```
+docker-compose up -d --build
+```
 * Visit the url http://ip-address-or-dns-hostname:8031/api/cars
 * Perform OAuth2 authentication with OKTA and validate redirect to the page. The user ID used to authenticate should be in the assignments list of Okta App and the user should have activated their accounts via the email received
 
