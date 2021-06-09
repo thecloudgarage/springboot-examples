@@ -19,6 +19,7 @@ Take the previous version of efficient search API and enable it for **OKTA OAuth
   * pom.xml changed
     * **Removed** OKTA security dependency for Web based OAuth2
     * Spring security dependencies added
+    
     ```
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -30,9 +31,12 @@ Take the previous version of efficient search API and enable it for **OKTA OAuth
             <version>2.0.0.RELEASE</version>
         </dependency>
     ```
+  
+  * **application.properties** changed to **application.yml** (used http://www.allencoders.online/converters/props2yaml)
   * application.yml changed to externalize the DB connection from H2 to MYSQL
   * **application.yml changed to accomodate OKTA m2m methods include token instrospection**	
   * Main application class (SpringBootEfficientSearchApiApplication.java) changed to import spring security classes and enable application as a resource server
+  
   ```
   package com.mak.springbootefficientsearchapi;
 
@@ -56,8 +60,10 @@ Take the previous version of efficient search API and enable it for **OKTA OAuth
 
 * Complete OKTA setup as shown in the below diagrams
 * Once done, simply execute "docker-compose up -d --build" (change variables as needed in docker-compose.yml)
+* Execute Curl tests to verify API & OAuth2 M2M functionality
+* Build the client app on Boomi and erify API & OAuth2 M2M functionality
 
-### STEP-1 OKTA SETUP 
+### OKTA SETUP 
 * Register via https://developer.okta.com/login/ and any method (google, github, etc.)
 * Complete initial nuances of goals, etc.
 * Top left hand menu icon > directory > people. Finish the addition of a user and send activation email. 
