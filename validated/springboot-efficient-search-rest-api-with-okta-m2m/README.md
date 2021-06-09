@@ -1,4 +1,4 @@
-# Spring Boot: How to design an efficient REST API with OAuth2.0 Machine to Machine workflow?
+# Spring Boot, Boomi & OKTA: How to design an efficient REST API with OAuth2.0 Machine to Machine workflow?
 
 ## Objective
 Take the previous version of efficient search API and enable it for **OKTA OAuth2.0 Machine2Machine** instead of Web based OAuth2.0. The m2m method implements **Client Credentials flow** and is recommended for server-side (AKA confidential) client applications with no end user, which normally describes machine-to-machine communication.
