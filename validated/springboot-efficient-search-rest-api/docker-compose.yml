@@ -6,7 +6,7 @@ services:
       MYSQL_ROOT_PASSWORD: 123456
       MYSQL_DATABASE: "DB"
     ports:
-      - "33406:3306"
+      - "31003:31003"
     volumes:
       - "./config/my.conf:/etc/mysql/conf.d/config-file.cnf"
       - "./data:/var/lib/mysql:rw"
@@ -19,9 +19,13 @@ services:
     ports:
       - "8031:8080"
     environment:
-      dbhost: "3.142.146.96"
-      dbport: 33406
+      dbhost: "mysqldb"
+      dbport: 31003
       dbname: "DB"
       dbuser: "root"
       dbpass: "123456"
     restart: on-failure
+    links:
+      - mysqldb
+    depends_on:
+      - mysqldb
