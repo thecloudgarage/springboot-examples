@@ -4,7 +4,9 @@
  [![BCH compliance](https://bettercodehub.com/edge/badge/Raouf25/Spring-Boot-efficient-search-API?branch=master)](https://bettercodehub.com/)
 
 ## Objective
-Take the previous version of efficient search API and enable it for **OKTA OAuth2.0 Machine2Machine** instead of Web based OAuth2.0. The m2m method implements **Client Credentials flow** and is recommended for server-side (AKA confidential) client applications with no end user, which normally describes machine-to-machine communication. **Example:** One API calling another API which is secured via OKTA. Your client application/API needs to securely store its Client ID and secret and pass those to Okta in exchange for an access token. At a high-level, the flow only has two steps:
+Take the previous version of efficient search API and enable it for **OKTA OAuth2.0 Machine2Machine** instead of Web based OAuth2.0. The m2m method implements **Client Credentials flow** and is recommended for server-side (AKA confidential) client applications with no end user, which normally describes machine-to-machine communication.
+
+**Example:** One API calling another API which is secured via OKTA. Your client application/API needs to securely store its Client ID and secret and pass those to Okta in exchange for an access token. At a high-level, the flow only has two steps:
 
 ### Changes done from the original fork (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
 * docker-compose added
