@@ -9,8 +9,8 @@ Take the previous version of efficient search API and enable it for **OKTA OAuth
 
 ### Highlights
 * Original repo for the springboot basic app (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
-* Changes done
-  * docker-compose added
+* **Changes done**
+  * The Springboot application is dockerized and supplied with docker-compose for ease of deployments
   * **Boomi HTTP client process** to emulate Client Credentials Grant workflow
   * **CURL client** to manually emulate the Client Credentials Grant workflow
   * Dockerfile changed to skip tests
