@@ -7,17 +7,19 @@ Take the previous version of efficient search API and enable it for **OKTA OAuth
 
 ![image](https://user-images.githubusercontent.com/39495790/121356158-3cd29d80-c94e-11eb-9ea4-adb639f7a40b.png)
 
-### Changes done from the original fork (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
-* docker-compose added
-* **Boomi HTTP client process** to emulate Client Credentials Grant workflow
-* **CURL client** to manually emulate the Client Credentials Grant workflow
-* Dockerfile changed to skip tests
-* mysql-dump, data and config directories added to support MYSQL database initialization
-* pom.xml changed to include mysql dependency
-* pom.xml changed
-  * **Removed** OKTA security dependency for Web based OAuth2
-  * Spring security dependencies added
-```
+### Highlights
+* Original repo for the springboot basic app (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
+* Changes done
+  * docker-compose added
+  * **Boomi HTTP client process** to emulate Client Credentials Grant workflow
+  * **CURL client** to manually emulate the Client Credentials Grant workflow
+  * Dockerfile changed to skip tests
+  * mysql-dump, data and config directories added to support MYSQL database initialization
+  * pom.xml changed to include mysql dependency
+  * pom.xml changed
+    * **Removed** OKTA security dependency for Web based OAuth2
+    * Spring security dependencies added
+    ```
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
@@ -27,29 +29,33 @@ Take the previous version of efficient search API and enable it for **OKTA OAuth
             <artifactId>spring-security-oauth2-autoconfigure</artifactId>
             <version>2.0.0.RELEASE</version>
         </dependency>
-```
-* application.yml changed to externalize the DB connection from H2 to MYSQL
-* **application.yml changed to accomodate OKTA m2m methods include token instrospection**	
-* Main application class (SpringBootEfficientSearchApiApplication.java) changed to import spring security classes and enable application as a resource server
-```
-package com.mak.springbootefficientsearchapi;
+    ```
+  * application.yml changed to externalize the DB connection from H2 to MYSQL
+  * **application.yml changed to accomodate OKTA m2m methods include token instrospection**	
+  * Main application class (SpringBootEfficientSearchApiApplication.java) changed to import spring security classes and enable application as a resource server
+  ```
+  package com.mak.springbootefficientsearchapi;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
-import org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler;
+  import org.springframework.boot.SpringApplication;
+  import org.springframework.boot.autoconfigure.SpringBootApplication;
+  import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+  import org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler;
 
-@EnableResourceServer
-@SpringBootApplication
-public class SpringBootEfficientSearchApiApplication {
+  @EnableResourceServer
+  @SpringBootApplication
+  public class SpringBootEfficientSearchApiApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringBootEfficientSearchApiApplication.class, args);
-    }
-}
-```
-* data.sql changed to a full dump and moved to mysql-dump directory instead of /src/main/resources
-* To run simply execute "docker-compose up -d --build" (change variables as needed in docker-compose.yml)
+      }
+  }
+  ```
+  * data.sql changed to a full dump and moved to mysql-dump directory instead of /src/main/resources
+  
+### How to run
+
+* Complete OKTA setup as shown in the below diagrams
+* Once done, simply execute "docker-compose up -d --build" (change variables as needed in docker-compose.yml)
 
 ### STEP-1 OKTA SETUP 
 * Register via https://developer.okta.com/login/ and any method (google, github, etc.)
