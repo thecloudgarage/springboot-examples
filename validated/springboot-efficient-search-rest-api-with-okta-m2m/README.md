@@ -506,12 +506,7 @@ the response should be:
 docker stop `docker container ls | grep "spring-boot-efficient-search-api:*" | awk '{ print $1 }'`
 ```
 
-## Live Demo
-This project is deployed in https://efficient-search-api.herokuapp.com/api/cars
-
-Let's try: https://efficient-search-api.herokuapp.com/api/cars?country=USA&sort=createDate,desc&limit=100&offset=2
-
-## License
+## License (credit to the author of original fork)
 For more details please see this **[medium post](https://medium.com/quick-code/spring-boot-how-to-design-efficient-search-rest-api-c3a678b693a0)** .
 
 Spring Boot Efficient Search Api Copyright © 2020 by Abderraouf Makhlouf <makhlouf.raouf@gmail.com>
