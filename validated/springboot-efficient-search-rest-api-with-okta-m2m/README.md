@@ -521,7 +521,7 @@ the response should be:
 docker stop `docker container ls | grep "spring-boot-efficient-search-api:*" | awk '{ print $1 }'`
 ```
 
-## License (credit to the author of original fork)
+## Credit to the author of original repo for the basic api functionality)
 For more details please see this **[medium post](https://medium.com/quick-code/spring-boot-how-to-design-efficient-search-rest-api-c3a678b693a0)** .
 
-Spring Boot Efficient Search Api Copyright © 2020 by Abderraouf Makhlouf <makhlouf.raouf@gmail.com>
+License for the basic app: Spring Boot Efficient Search Api Copyright © 2020 by Abderraouf Makhlouf <makhlouf.raouf@gmail.com>
