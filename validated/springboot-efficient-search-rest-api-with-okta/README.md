@@ -3,6 +3,9 @@
  [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Raouf25_Spring-Boot-efficient-search-API&metric=alert_status)](https://sonarcloud.io/dashboard?id=Raouf25_Spring-Boot-efficient-search-API)
  [![BCH compliance](https://bettercodehub.com/edge/badge/Raouf25/Spring-Boot-efficient-search-API?branch=master)](https://bettercodehub.com/)
 
+## Objective
+Take the previous version of efficient search API and enable it for OKTA OAuth2.0 Web App authentication. When you browse the URL, it will redirect the page to OKTA authentication page and upon success you will be redirected to the API output page.
+
 ### Changes done from the original fork (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
 * docker-compose added
 * Dockerfile changed to skip tests
@@ -14,6 +17,8 @@
 * data.sql changed to a full dump and moved to mysql-dump directory instead of /src/main/resources
 * To run simply execute "docker-compose up -d --build" (change variables as needed in docker-compose.yml)
 
+> **NOTE** pom.xml has one okta dependency included and that's all! Everything else is managed by OKTA configurations.
+> 
 ### STEP-1 OKTA SETUP 
 * Register via https://developer.okta.com/login/ and any method (google, github, etc.)
 * Complete initial nuances of goals, etc.
