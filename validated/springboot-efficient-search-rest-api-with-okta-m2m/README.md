@@ -10,8 +10,21 @@ An efficient search API based on Spring boot which is protected via OAuth2.0. Ta
 ![image](https://user-images.githubusercontent.com/39495790/121356158-3cd29d80-c94e-11eb-9ea4-adb639f7a40b.png)
 
 ### Prequisites
+* Basic familiarity with Spring Boot, Postgresql, docker, Boomi, OAuth2 workflows
 * Docker host with docker-compose installed and access to Internet
 * Boomi Atomsphere account (optional in case you want to spin up the Client API)
+
+### How to run
+
+* Complete OKTA setup as shown in the below diagrams
+* Create a new environment in Boomi Atomsphere and create a token for new atom installation.
+* Clone the repo and navigate to springboot-examples/validated/springboot-efficient-search-rest-api-with-okta-m2m/
+* Edit the docker-compose and replace the environment variables
+  *  springboot-api: oktaIssuerUrl, oktaClientId, oktaClientSecret
+  *  boomi-atom: INSTALL_TOKEN, BOOMI_ENVIRONMENTID
+* Once done, save & simply execute "docker-compose up -d --build" (change variables as needed in docker-compose.yml)
+* Execute Curl tests to verify API & OAuth2 M2M functionality
+* Build the client app on Boomi and erify API & OAuth2 M2M functionality
 
 ### Highlights
 * Original repo for the springboot basic app (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
@@ -78,13 +91,6 @@ An efficient search API based on Spring boot which is protected via OAuth2.0. Ta
   ```
   * data.sql changed to a full dump and moved to mysql-dump directory instead of /src/main/resources
   
-### How to run
-
-* Complete OKTA setup as shown in the below diagrams
-* Create a new environment in Boomi Atomsphere and create a token for new atom installation. Copy the token and environment ID and replace the variables in docker-compose.yml for boomi-atom configurations
-* Once done, simply execute "docker-compose up -d --build" (change variables as needed in docker-compose.yml)
-* Execute Curl tests to verify API & OAuth2 M2M functionality
-* Build the client app on Boomi and erify API & OAuth2 M2M functionality
 
 ### OKTA SETUP 
 * Register via https://developer.okta.com/login/ and any method (google, github, etc.)
