@@ -548,7 +548,9 @@ Save and then create a new operation for the connector
 
 ![image](https://user-images.githubusercontent.com/39495790/121466780-9c27c080-c9d5-11eb-8691-a6aaa883393b.png)
 
-Import the JSON profile file provided in this github repository. You can download...
+Download the profile from the below link and save it on your laptop/machine. Then using the import option use the file to build the JSON profile
+
+<a id="raw-url" href="https://github.com/thecloudgarage/springboot-examples/tree/main/validated/springboot-efficient-search-rest-api-with-okta-m2m/boomi_dir/boomi_profiles">Download Profile as JSON file</a>
 
 ![image](https://user-images.githubusercontent.com/39495790/121471514-70a8d400-c9dd-11eb-946a-4d2917a0825f.png)
 
