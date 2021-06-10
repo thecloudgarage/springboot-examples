@@ -5,7 +5,7 @@ An efficient search API based on Spring boot which is protected via OAuth2.0. Ta
 
 **Additionally** build a **Boomi** based HTTP client that gets authenticated data from the Spring boot API **(OPTIONAL)**
 
-**Example:** An internal API (Boomi HTTP client or CURL) calling another third party API (Spring boot) which is secured via OKTA. Your client application/API needs to securely store its Client ID and secret and pass those to Okta in exchange for an access token. At a high-level, the flow only has two steps:
+**Example:** An internal API (Boomi HTTP client or CURL) calling another third party API (Spring boot) which is secured via OKTA. Your client application/API needs to securely store its Client ID and secret and pass those to Okta in exchange for an access token. At a high-level, the flow only has four steps:
 
 ![image](https://user-images.githubusercontent.com/39495790/121356158-3cd29d80-c94e-11eb-9ea4-adb639f7a40b.png)
 
