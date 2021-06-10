@@ -321,6 +321,6 @@ Save every screen and return back to the main process. Link up the http connecto
 ![image](https://user-images.githubusercontent.com/39495790/121472215-823eab80-c9de-11eb-82ea-dfd797951439.png)
 
 ### Credit to the author of original repo for the basic api functionality
-For more details please see this **[medium post](https://medium.com/quick-code/spring-boot-how-to-design-efficient-search-rest-api-c3a678b693a0)** .
+For more details on the Spring boot code and search functionality please see this **[medium post](https://medium.com/quick-code/spring-boot-how-to-design-efficient-search-rest-api-c3a678b693a0)** .
 
 License for the basic app: Spring Boot Efficient Search Api Copyright © 2020 by Abderraouf Makhlouf <makhlouf.raouf@gmail.com>
