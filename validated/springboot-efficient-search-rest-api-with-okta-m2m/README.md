@@ -518,7 +518,15 @@ the response should be:
 
 ## BOOMI process- Emulate the Client APP/API
 
-Prequisites: Atom deployed and online
+> **NOTE** The Boomi process of the scenario is optional. You can stop here itself if you are happy working with CURL and/or do not have Boomi account. 
+> If you have a Boomi account and want to experiment further., then proceed
+
+**Prequisites:** Atom deployed (anywhere, anyhow, Windows latop/server, Linux, Docker/Kubernetes or Boomi Cloud) =and online
+
+The process at the end of the exercise will look this!
+
+
+![image](https://user-images.githubusercontent.com/39495790/121462868-e35e8300-c9ce-11eb-8a88-d1793713496f.png)
 
 
 
