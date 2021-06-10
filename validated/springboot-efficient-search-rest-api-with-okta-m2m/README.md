@@ -278,7 +278,8 @@ the response should be:
 > **NOTE** The Boomi process of the scenario is optional. You can stop here itself if you are happy working with CURL and/or do not have Boomi account. 
 > If you have a Boomi account and want to experiment further., then proceed
 > Also note that the docker machine should be reachable from the ATOM via a public or private IP
-> If you want to avoid all the hassles, a docker deployment is included in the docker-compose.yml. You can simply replace the token and environment ID for your account and it will spin up a new atom
+> **If you want to avoid all the hassles, a docker deployment is included in the docker-compose.yml. 
+> You can simply replace the token and environment ID for your account and it will spin up a new atom with which you can test the client app process**
 
 **Prequisites:** Atom deployed (anywhere, anyhow, Windows latop/server, Linux, Docker/Kubernetes or Boomi Cloud) =and online
 
