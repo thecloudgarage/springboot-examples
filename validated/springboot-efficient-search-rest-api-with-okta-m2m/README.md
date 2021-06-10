@@ -1,7 +1,9 @@
 # Spring Boot, Boomi & OKTA: How to design an efficient REST API with OAuth2.0 Machine to Machine workflow?
 
 ## Objective
-An efficient search API based on Spring boot which is protected via OAuth2.0. Take the previous version of efficient search API and enable it for **OKTA OAuth2.0 Machine2Machine** instead of Web based OAuth2.0. The m2m method implements **Client Credentials flow** and is recommended for server-side (AKA confidential) client applications with no end user, which normally describes machine-to-machine communication.
+An efficient search API based on Spring boot which is protected via OAuth2.0. Take the original version of efficient search API and enable it for **OKTA OAuth2.0 Machine2Machine** instead of Web based OAuth2.0. The m2m method implements **Client Credentials flow** and is recommended for server-side (AKA confidential) client applications with no end user, which normally describes machine-to-machine communication.
+
+**Additionally** build a **Boomi** based HTTP client that gets authenticated data from the Spring boot API **(OPTIONAL)**
 
 **Example:** An internal API (Boomi HTTP client or CURL) calling another third party API (Spring boot) which is secured via OKTA. Your client application/API needs to securely store its Client ID and secret and pass those to Okta in exchange for an access token. At a high-level, the flow only has two steps:
 
