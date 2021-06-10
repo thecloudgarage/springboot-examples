@@ -554,16 +554,11 @@ Import the JSON profile file provided in this github repository. You can downloa
 
 Once the profile is generated you can browse through the elements (these reflect of the data structure that will be received via the api query)
 
+Save every screen and return back to the main process. Link up the http connector and a disk connector.
 
+**THAT'S IT! HIT THE TEST BUTTON AND POST IT'S EXECUTION THE RESULTS CAN BE SEEN IN THE DISK DIRECTORY SPECIFIED FOR THE ATOM**
 
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/39495790/121472215-823eab80-c9de-11eb-82ea-dfd797951439.png)
 
 ### Credit to the author of original repo for the basic api functionality
 For more details please see this **[medium post](https://medium.com/quick-code/spring-boot-how-to-design-efficient-search-rest-api-c3a678b693a0)** .
