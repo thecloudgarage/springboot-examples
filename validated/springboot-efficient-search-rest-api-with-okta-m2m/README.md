@@ -22,17 +22,17 @@ An efficient search API based on Spring boot which is protected via OAuth2.0. Ta
     * **Removed** OKTA security dependency for Web based OAuth2
     * Spring security dependencies added
     
-    ```
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.security.oauth.boot</groupId>
-            <artifactId>spring-security-oauth2-autoconfigure</artifactId>
-            <version>2.0.0.RELEASE</version>
-        </dependency>
-    ```
+  ```
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-security</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.springframework.security.oauth.boot</groupId>
+          <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+          <version>2.0.0.RELEASE</version>
+      </dependency>
+  ```
   
   * **application.properties** changed to **application.yml** (used http://www.allencoders.online/converters/props2yaml)
   * application.yml changed to externalize the DB connection from H2 to MYSQL
