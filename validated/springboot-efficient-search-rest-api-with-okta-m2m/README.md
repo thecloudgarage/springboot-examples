@@ -536,7 +536,18 @@ The process at the end of the exercise will look this!
 
 ![image](https://user-images.githubusercontent.com/39495790/121465335-43efbf00-c9d3-11eb-8e9d-8b1416bf1d2f.png)
 
-![image](https://user-images.githubusercontent.com/39495790/121465321-3a665700-c9d3-11eb-9781-a8dd6153f96f.png)
+![image](https://user-images.githubusercontent.com/39495790/121465587-b791cc00-c9d3-11eb-84a3-d979d220ed5d.png)
+
+Save and then create a new operation for the connector
+
+![image](https://user-images.githubusercontent.com/39495790/121465821-f32c9600-c9d3-11eb-88fc-75d9b43e07bf.png)
+
+![image](https://user-images.githubusercontent.com/39495790/121466428-0e4bd580-c9d5-11eb-8515-6c9bd6502c4b.png)
+
+![image](https://user-images.githubusercontent.com/39495790/121466780-9c27c080-c9d5-11eb-8691-a6aaa883393b.png)
+
+
+
 
 
 
