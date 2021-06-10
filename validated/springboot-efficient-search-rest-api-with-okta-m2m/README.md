@@ -95,12 +95,6 @@ An efficient search API based on Spring boot which is protected via OAuth2.0. Ta
 ### OKTA SETUP 
 * Register via https://developer.okta.com/login/ and any method (google, github, etc.)
 * Complete initial nuances of goals, etc.
-* Top left hand menu icon > directory > people. Finish the addition of a user and send activation email. 
-* Regardless, the user for which the account has been created needs to activate their account via the email received and set a password for themselves
-
-![image](https://user-images.githubusercontent.com/39495790/121224644-6637ee80-c8a6-11eb-8d4e-a1c00a191466.png)
-
-* Alternatively you can do a group based assignment also., but for now we will stick to single user
 * Next again click on menu and Applications > Create App Integration
 
 ![image](https://user-images.githubusercontent.com/39495790/121224542-4d2f3d80-c8a6-11eb-9f4f-3abaf79e7215.png)
