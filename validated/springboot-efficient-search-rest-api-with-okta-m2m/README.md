@@ -77,6 +77,7 @@ An efficient search API based on Spring boot which is protected via OAuth2.0. Ta
 ### How to run
 
 * Complete OKTA setup as shown in the below diagrams
+* Create a new environment in Boomi Atomsphere and create a token for new atom installation. Copy the token and environment ID and replace the variables in docker-compose.yml for boomi-atom configurations
 * Once done, simply execute "docker-compose up -d --build" (change variables as needed in docker-compose.yml)
 * Execute Curl tests to verify API & OAuth2 M2M functionality
 * Build the client app on Boomi and erify API & OAuth2 M2M functionality
