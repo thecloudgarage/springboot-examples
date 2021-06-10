@@ -37,6 +37,22 @@ An efficient search API based on Spring boot which is protected via OAuth2.0. Ta
   * **application.properties** changed to **application.yml** (used http://www.allencoders.online/converters/props2yaml)
   * application.yml changed to externalize the DB connection from H2 to MYSQL
   * **application.yml changed to accomodate OKTA m2m methods include token instrospection**	
+  
+  ```
+  security:
+  oauth2:
+    client:
+      clientId: ${oktaClientId}
+      clientSecret: ${oktaClientSecret}
+    resource:
+      tokenInfoUri: ${oktaIssuerUrl}/v1/introspect
+  spring:
+    datasource:
+        password: ${dbpass}
+        url: jdbc:mysql://${dbhost}:${dbport}/${dbname}?zeroDateTimeBehavior=convertToNull
+        username: ${dbuser}
+  ```    
+  
   * Main application class (SpringBootEfficientSearchApiApplication.java) changed to import spring security classes and enable application as a resource server
   
   ```
