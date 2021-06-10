@@ -526,7 +526,21 @@ the response should be:
 The process at the end of the exercise will look this!
 
 
-![image](https://user-images.githubusercontent.com/39495790/121462868-e35e8300-c9ce-11eb-8a88-d1793713496f.png)
+![image](https://user-images.githubusercontent.com/39495790/121463339-81eae400-c9cf-11eb-9a2e-919815032dd0.png)
+
+* Begin with a new process component with a No data start shape
+* Bring in the HTTP connector and create a new connection & operation to query data from Spring Boot API. Configure the connection to utilize OAuth2.0 authentication via OKTA
+* Hook up the HTTP connector to the start shape
+* Bring in a disk connection to write queried data to the ATOM's disk volume (Alternatively the disk connector can be replaced with any other target connectors, Databases, etc. supported by Boomi)
+* Link the HTTP connector shape with the Disk shape and close it off with a STOP shape
+
+![image](https://user-images.githubusercontent.com/39495790/121465335-43efbf00-c9d3-11eb-8e9d-8b1416bf1d2f.png)
+
+![image](https://user-images.githubusercontent.com/39495790/121465321-3a665700-c9d3-11eb-9781-a8dd6153f96f.png)
+
+
+
+
 
 
 
