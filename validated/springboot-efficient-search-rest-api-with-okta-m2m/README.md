@@ -520,6 +520,8 @@ the response should be:
 
 > **NOTE** The Boomi process of the scenario is optional. You can stop here itself if you are happy working with CURL and/or do not have Boomi account. 
 > If you have a Boomi account and want to experiment further., then proceed
+> Also note that the docker machine should be reachable from the ATOM via a public or private IP
+> If you want to avoid all the hassles, a docker deployment is included in the docker-compose.yml. You can simply replace the token and environment ID for your account and it will spin up a new atom
 
 **Prequisites:** Atom deployed (anywhere, anyhow, Windows latop/server, Linux, Docker/Kubernetes or Boomi Cloud) =and online
 
@@ -545,6 +547,14 @@ Save and then create a new operation for the connector
 ![image](https://user-images.githubusercontent.com/39495790/121466428-0e4bd580-c9d5-11eb-8515-6c9bd6502c4b.png)
 
 ![image](https://user-images.githubusercontent.com/39495790/121466780-9c27c080-c9d5-11eb-8691-a6aaa883393b.png)
+
+Import the JSON profile file provided in this github repository. You can download...
+
+![image](https://user-images.githubusercontent.com/39495790/121471514-70a8d400-c9dd-11eb-946a-4d2917a0825f.png)
+
+Once the profile is generated you can browse through the elements (these reflect of the data structure that will be received via the api query)
+
+
 
 
 
