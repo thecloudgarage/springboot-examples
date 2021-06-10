@@ -32,3 +32,24 @@ services:
       - mysqldb
     depends_on:
       - mysqldb
+
+  boomi_atom:
+    image: boomi/atom:release
+    privileged: true
+    environment:
+      - URL=https://platform.boomi.com
+      - BOOMI_ATOMNAME=iotsimulation
+      - BOOMI_CONTAINERNAME=iotsimulation
+      - ATOM_LOCALHOSTID=iotsimulation
+      - INSTALL_TOKEN=<paste-your-atom-token-here>
+      - BOOMI_ENVIRONMENTID=<paste-your-environment-id-here>
+      - INSTALLATION_DIRECTORY=/var/boomi
+    ports:
+      - "9090:9090"
+    volumes:
+      - "./boomi_dir:/var/boomi:consistent"
+    links:
+      - springboot-api
+    depends_on:
+      - springboot-api
+
