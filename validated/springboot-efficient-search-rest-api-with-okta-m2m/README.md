@@ -11,7 +11,7 @@ An efficient search API based on Spring boot which is protected via OAuth2.0. Ta
 
 ### Highlights
 * Original repo for the springboot basic app (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
-* **Changes done**
+* **CHANGES DONE FOR BUILDING THIS REPO**
   * The Springboot application is dockerized and supplied with docker-compose for ease of deployments
   * **Boomi HTTP client process** to emulate Client Credentials Grant workflow
   * **CURL client** to manually emulate the Client Credentials Grant workflow
