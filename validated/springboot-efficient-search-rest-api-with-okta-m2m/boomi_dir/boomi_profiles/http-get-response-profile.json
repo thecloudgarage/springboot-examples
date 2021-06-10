@@ -1,0 +1,309 @@
+[{
+    "id": 1,
+    "manufacturer": "Acura",
+    "model": "Integra",
+    "type": "Small",
+    "country": "Japon",
+    "createDate": "1931-02-01"
+}, {
+    "id": 2,
+    "manufacturer": "Acura",
+    "model": "Legend",
+    "type": "Midsize",
+    "country": "Japon",
+    "createDate": "1959-07-30"
+}, {
+    "id": 3,
+    "manufacturer": "Audi",
+    "model": "90",
+    "type": "Compact",
+    "country": "Germany",
+    "createDate": "1970-07-30"
+}, {
+    "id": 4,
+    "manufacturer": "Audi",
+    "model": "100",
+    "type": "Midsize",
+    "country": "Germany",
+    "createDate": "1963-10-04"
+}, {
+    "id": 5,
+    "manufacturer": "BMW",
+    "model": "535i",
+    "type": "Midsize",
+    "country": "Germany",
+    "createDate": "1931-09-08"
+}, {
+    "id": 6,
+    "manufacturer": "Buick",
+    "model": "Century",
+    "type": "Midsize",
+    "country": "USA",
+    "createDate": "1957-02-20"
+}, {
+    "id": 7,
+    "manufacturer": "Buick",
+    "model": "LeSabre",
+    "type": "Large",
+    "country": "USA",
+    "createDate": "1968-10-23"
+}, {
+    "id": 8,
+    "manufacturer": "Buick",
+    "model": "Roadmaster",
+    "type": "Large",
+    "country": "USA",
+    "createDate": "1970-08-17"
+}, {
+    "id": 9,
+    "manufacturer": "Buick",
+    "model": "Riviera",
+    "type": "Midsize",
+    "country": "USA",
+    "createDate": "1962-08-02"
+}, {
+    "id": 10,
+    "manufacturer": "Cadillac",
+    "model": "DeVille",
+    "type": "Large",
+    "country": "USA",
+    "createDate": "1956-12-01"
+}, {
+    "id": 11,
+    "manufacturer": "Cadillac",
+    "model": "Seville",
+    "type": "Midsize",
+    "country": "USA",
+    "createDate": "1957-07-30"
+}, {
+    "id": 12,
+    "manufacturer": "Chevrolet",
+    "model": "Cavalier",
+    "type": "Compact",
+    "country": "USA",
+    "createDate": "1952-06-18"
+}, {
+    "id": 13,
+    "manufacturer": "Chevrolet",
+    "model": "Corsica",
+    "type": "Compact",
+    "country": "USA",
+    "createDate": "1947-06-26"
+}, {
+    "id": 14,
+    "manufacturer": "Chevrolet",
+    "model": "Camaro",
+    "type": "Sporty",
+    "country": "USA",
+    "createDate": "1940-05-27"
+}, {
+    "id": 15,
+    "manufacturer": "Chevrolet",
+    "model": "Lumina",
+    "type": "Midsize",
+    "country": "USA",
+    "createDate": "1949-02-21"
+}, {
+    "id": 16,
+    "manufacturer": "Chevrolet",
+    "model": "Lumina_APV",
+    "type": "Van",
+    "country": "USA",
+    "createDate": "1944-11-02"
+}, {
+    "id": 17,
+    "manufacturer": "Chevrolet",
+    "model": "Astro",
+    "type": "Van",
+    "country": "USA",
+    "createDate": "1962-06-07"
+}, {
+    "id": 18,
+    "manufacturer": "Chevrolet",
+    "model": "Caprice",
+    "type": "Large",
+    "country": "USA",
+    "createDate": "1951-01-11"
+}, {
+    "id": 19,
+    "manufacturer": "Chevrolet",
+    "model": "Corvette",
+    "type": "Sporty",
+    "country": "USA",
+    "createDate": "1966-11-01"
+}, {
+    "id": 20,
+    "manufacturer": "Chrysler",
+    "model": "Concorde",
+    "type": "Large",
+    "country": "USA",
+    "createDate": "1964-07-10"
+}, {
+    "id": 21,
+    "manufacturer": "Chrysler",
+    "model": "LeBaron",
+    "type": "Compact",
+    "country": "USA",
+    "createDate": "1938-05-06"
+}, {
+    "id": 22,
+    "manufacturer": "Chrysler",
+    "model": "Imperial",
+    "type": "Large",
+    "country": "USA",
+    "createDate": "1960-07-07"
+}, {
+    "id": 23,
+    "manufacturer": "Dodge",
+    "model": "Colt",
+    "type": "Small",
+    "country": "USA",
+    "createDate": "1943-06-02"
+}, {
+    "id": 24,
+    "manufacturer": "Dodge",
+    "model": "Shadow",
+    "type": "Small",
+    "country": "USA",
+    "createDate": "1934-02-27"
+}, {
+    "id": 25,
+    "manufacturer": "Dodge",
+    "model": "Spirit",
+    "type": "Compact",
+    "country": "USA",
+    "createDate": "1932-02-26"
+}, {
+    "id": 26,
+    "manufacturer": "Dodge",
+    "model": "Caravan",
+    "type": "Van",
+    "country": "USA",
+    "createDate": "1946-06-12"
+}, {
+    "id": 27,
+    "manufacturer": "Dodge",
+    "model": "Dynasty",
+    "type": "Midsize",
+    "country": "USA",
+    "createDate": "1928-03-02"
+}, {
+    "id": 28,
+    "manufacturer": "Dodge",
+    "model": "Stealth",
+    "type": "Sporty",
+    "country": "USA",
+    "createDate": "1966-05-20"
+}, {
+    "id": 29,
+    "manufacturer": "Eagle",
+    "model": "Summit",
+    "type": "Small",
+    "country": "USA",
+    "createDate": "1941-05-12"
+}, {
+    "id": 30,
+    "manufacturer": "Eagle",
+    "model": "Vision",
+    "type": "Large",
+    "country": "USA",
+    "createDate": "1963-09-17"
+}, {
+    "id": 31,
+    "manufacturer": "Ford",
+    "model": "Festiva",
+    "type": "Small",
+    "country": "USA",
+    "createDate": "1964-10-22"
+}, {
+    "id": 32,
+    "manufacturer": "Ford",
+    "model": "Escort",
+    "type": "Small",
+    "country": "USA",
+    "createDate": "1930-12-02"
+}, {
+    "id": 33,
+    "manufacturer": "Ford",
+    "model": "Tempo",
+    "type": "Compact",
+    "country": "USA",
+    "createDate": "1950-04-19"
+}, {
+    "id": 34,
+    "manufacturer": "Ford",
+    "model": "Mustang",
+    "type": "Sporty",
+    "country": "USA",
+    "createDate": "1940-06-18"
+}, {
+    "id": 35,
+    "manufacturer": "Ford",
+    "model": "Probe",
+    "type": "Sporty",
+    "country": "USA",
+    "createDate": "1941-05-24"
+}, {
+    "id": 36,
+    "manufacturer": "Ford",
+    "model": "Aerostar",
+    "type": "Van",
+    "country": "USA",
+    "createDate": "1935-01-27"
+}, {
+    "id": 37,
+    "manufacturer": "Ford",
+    "model": "Taurus",
+    "type": "Midsize",
+    "country": "USA",
+    "createDate": "1947-10-08"
+}, {
+    "id": 38,
+    "manufacturer": "Ford",
+    "model": "Crown_Victoria",
+    "type": "Large",
+    "country": "USA",
+    "createDate": "1962-02-28"
+}, {
+    "id": 39,
+    "manufacturer": "Geo",
+    "model": "Metro",
+    "type": "Small",
+    "country": "USA",
+    "createDate": "1965-10-30"
+}, {
+    "id": 40,
+    "manufacturer": "Geo",
+    "model": "Storm",
+    "type": "Sporty",
+    "country": "USA",
+    "createDate": "1955-07-07"
+}, {
+    "id": 41,
+    "manufacturer": "Honda",
+    "model": "Prelude",
+    "type": "Sporty",
+    "country": "Japon",
+    "createDate": "1955-06-08"
+}, {
+    "id": 42,
+    "manufacturer": "Honda",
+    "model": "Civic",
+    "type": "Small",
+    "country": "Japon",
+    "createDate": "1967-09-16"
+}, {
+    "id": 43,
+    "manufacturer": "Honda",
+    "model": "Accord",
+    "type": "Compact",
+    "country": "Japon",
+    "createDate": "1938-06-26"
+}, {
+    "id": 44,
+    "manufacturer": "Hyundai",
+    "model": "Excel",
+    "type": "Small",
+    "country": "South Korea",
+    "createDate": "1940-02-25"
+}]
