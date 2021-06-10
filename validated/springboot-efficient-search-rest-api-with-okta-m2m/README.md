@@ -18,16 +18,16 @@ An efficient search API based on Spring boot which is protected via OAuth2.0. Ta
 
 * Complete OKTA setup as shown in the below diagrams
 * Create a new environment in Boomi Atomsphere and create a token for new atom installation.
-* Clone the repo and navigate to springboot-examples/validated/springboot-efficient-search-rest-api-with-okta-m2m/
+* Clone the repo and navigate to **springboot-examples/validated/springboot-efficient-search-rest-api-with-okta-m2m/**
 * Edit the docker-compose and replace the environment variables
   *  springboot-api: oktaIssuerUrl, oktaClientId, oktaClientSecret
   *  boomi-atom: INSTALL_TOKEN, BOOMI_ENVIRONMENTID
-* Once done, save & simply execute "docker-compose up -d --build" (change variables as needed in docker-compose.yml)
+* Once done, save & simply execute "docker-compose up -d --build"
 * Execute Curl tests to verify API & OAuth2 M2M functionality
 * Build the client app on Boomi and erify API & OAuth2 M2M functionality
 
 ### Highlights
-* Original repo for the springboot basic app (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
+* **Credits:** Leverages the basic spring boot search app (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
 * **CHANGES DONE FOR BUILDING THIS REPO**
   * The Springboot application is dockerized and supplied with docker-compose for ease of deployments
   * **Boomi HTTP client process** to emulate Client Credentials Grant workflow
