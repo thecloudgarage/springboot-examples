@@ -9,6 +9,10 @@ An efficient search API based on Spring boot which is protected via OAuth2.0. Ta
 
 ![image](https://user-images.githubusercontent.com/39495790/121356158-3cd29d80-c94e-11eb-9ea4-adb639f7a40b.png)
 
+### Prequisites
+* Docker host with docker-compose installed and access to Internet
+* Boomi Atomsphere account (optional in case you want to spin up the Client API)
+
 ### Highlights
 * Original repo for the springboot basic app (https://github.com/Raouf25/Spring-Boot-efficient-search-API)
 * **CHANGES DONE FOR BUILDING THIS REPO**
